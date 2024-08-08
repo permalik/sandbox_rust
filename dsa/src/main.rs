@@ -1,6 +1,10 @@
 // TODO: impl dynamic array
 // TODO: impl multidimensional array
 
+use crate::insertion_sort::insertion_sort;
+
+mod insertion_sort;
+
 fn static_array() {
     const ARR: [i32; 10] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     const LEN: usize = ARR.len();
@@ -19,4 +23,5 @@ fn static_array() {
 fn main() {
     print!("static array:\n");
     static_array();
+    insertion_sort();
 }
