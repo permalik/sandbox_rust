@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# TODO: handle and execute only if arg exactly matches project
+
 if [ -z "$1" ]; then
     echo "Usage: $0 <project_name>"
     exit 1
